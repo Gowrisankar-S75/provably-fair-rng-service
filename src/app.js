@@ -4,12 +4,13 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 
 const app = express();
+const rngRoutes = require("./routes/rng.routes");
 
 app.use(express.json());
 app.use(cors());
 app.use(helmet());
 app.use(morgan("dev"));
-
+app.use("/api/v1/rng", rngRoutes);
 app.get("/", (req, res) => {
   res.json({
     service: "Provably Fair RNG Service",
