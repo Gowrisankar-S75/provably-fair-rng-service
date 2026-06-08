@@ -4,7 +4,8 @@
  * /api/v1/rng/random:
  *   get:
  *     summary: Generate secure random number
- *     tags:- RNG
+ *     tags:
+          - RNG
  *     parameters:
  *       - in: query
  *         name: min
