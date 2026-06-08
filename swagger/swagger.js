@@ -15,7 +15,7 @@ const options = {
         ? "https://provably-fair-rng-service-3.onrender.com"
         : "http://localhost:3000",
   },
-],,
+],
   },
   apis: ["./src/routes/*.js"],
 };
