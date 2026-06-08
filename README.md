@@ -56,8 +56,6 @@ docker run -p 3000:3000 provably-fair-rng
 ```
 ## Live Demo
 
-Health Check:
-https://provably-fair-rng-service-3.onrender.com/health
-
-Swagger Docs:
-https://provably-fair-rng-service-3.onrender.com/api-docs
+* API: https://provably-fair-rng-service-3.onrender.com
+* Swagger Docs: https://provably-fair-rng-service-3.onrender.com/api-docs
+* Health Check: https://provably-fair-rng-service-3.onrender.com/health
