@@ -9,10 +9,13 @@ const options = {
       description: "Cryptographically secure RNG microservice",
     },
     servers: [
-      {
-        url: "http://localhost:3000",
-      },
-    ],
+  {
+    url:
+      process.env.NODE_ENV === "production"
+        ? "https://provably-fair-rng-service-3.onrender.com"
+        : "http://localhost:3000",
+  },
+],,
   },
   apis: ["./src/routes/*.js"],
 };
