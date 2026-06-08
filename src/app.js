@@ -30,6 +30,17 @@ app.use("/api/v1/rng", rngRoutes);
 app.use("/api/v1/provably-fair", provablyFairRoutes);
 app.use("/api/v1/verify", verifyRoutes);
 
+/**
+ * @swagger
+ * /:
+ *   get:
+ *     summary: Get service information
+ *     tags:
+ *       - System
+ *     responses:
+ *       200:
+ *         description: Service information
+ */
 app.get("/", (req, res) => {
   res.json({
     service: "Provably Fair RNG Service",
@@ -37,6 +48,17 @@ app.get("/", (req, res) => {
   });
 });
 
+/**
+ * @swagger
+ * /health:
+ *   get:
+ *     summary: Health check endpoint
+ *     tags:
+ *       - System
+ *     responses:
+ *       200:
+ *         description: Service is healthy
+ */
 app.get("/health", (req, res) => {
   res.status(200).json({
     status: "UP",
