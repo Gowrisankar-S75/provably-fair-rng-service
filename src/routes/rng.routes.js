@@ -3,9 +3,9 @@
  * @swagger
  * /api/v1/rng/random:
  *   get:
- *     summary: Generate secure random number
+ *     summary: Generate a cryptographically secure random number
  *     tags:
-          - RNG
+ *       - RNG
  *     parameters:
  *       - in: query
  *         name: min
@@ -17,7 +17,7 @@
  *           type: integer
  *     responses:
  *       200:
- *         description: Random number generated
+ *         description: Random number generated successfully
  */
 
 const express = require("express");
